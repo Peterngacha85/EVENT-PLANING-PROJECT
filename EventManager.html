@@ -103,6 +103,87 @@
         .delete-btn:hover {
             background: #c0392b;
         }
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .event-form {
+                padding: 1rem;
+            }
+            
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                font-size: 16px; /* Prevents zoom on mobile */
+            }
+            
+            .event-card {
+                padding: 0.8rem;
+            }
+            
+            nav h1 {
+                font-size: 1.5rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .container {
+                margin: 1rem auto;
+                padding: 0 0.5rem;
+            }
+            
+            .event-form h2 {
+                font-size: 1.5rem;
+            }
+            
+            .form-group {
+                margin-bottom: 0.8rem;
+            }
+            
+            button {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            
+            .event-actions {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .event-actions button {
+                margin-right: 0;
+            }
+            
+            .event-card h3 {
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Additional Usability Improvements */
+        .event-form {
+            transition: all 0.3s ease;
+        }
+        
+        .event-card {
+            transition: transform 0.2s ease;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Navigation Enhancement */
+        @media (max-width: 768px) {
+            nav {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+        }
     </style>
 </head>
 <body>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Events - Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('./images/herosection.jpeg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Buttons */
+        .cta-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background: #ffd700;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #ffed4a;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 4rem 2rem;
+            background: #f5f5f5;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .gallery-item {
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 4rem 2rem;
+            background: white;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            margin-bottom: 2rem;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="EventManager.html">Schedule Event</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Let's Organize Your Celebration Together</h1>
+        <p>Creating unforgettable moments, one celebration at a time</p>
+        <div class="cta-buttons">
+            <a href="EventManager.html" class="cta-button">Schedule Your Celebration</a>
+            <a href="#gallery" class="cta-button">View Gallery</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Our Celebration Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Replace src with your actual image paths -->
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.53 (1).jpeg" alt="Celebration 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.53 (2).jpeg" alt="Celebration 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.53 (3).jpeg" alt="Celebration 3">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.53 (4).jpeg" alt="Celebration 4">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.53 (5).jpeg" alt="Celebration 5">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.54 (1).jpeg" alt="Celebration 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.54 (2).jpeg" alt="Celebration 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.54 (3).jpeg" alt="Celebration 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./images/WhatsApp Image 2025-02-07 at 14.25.54.jpeg" alt="Celebration 6">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>We are passionate about creating memorable celebrations that reflect your unique style and vision. With years of experience in event planning, our team ensures every detail is perfect for your special day.</p>
+            <p>From intimate gatherings to grand celebrations, we handle everything with professionalism and creativity, making your dream event a reality.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>📞 Phone: (123) 456-7890</p>
+            <p>📧 Email: info@celebrationevents.com</p>
+            <p>📍 Address: 123 Celebration Street, Event City, EC 12345</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Celebration Events. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(0, 0, 0, 0.9)';
+            } else {
+                nav.style.background = 'rgba(0, 0, 0, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
